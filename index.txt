@@ -1,0 +1,11 @@
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>23.0</version>
+</dependency>
+ for (int i = 0; i < iterations; i++) {
+    final List<String> list = new LinkedList<>();
+    final Stopwatch stopWatch = Stopwatch.createStarted();
+    test(list);
+    System.out.println(stopWatch.stop().elapsed(TimeUnit.MILLISECONDS));
+}
